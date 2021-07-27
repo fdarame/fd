@@ -1,34 +1,34 @@
+    function check(){
+	 var count = 99;
+	 var word="bottles";
 
-function check(){
-    var user1;
-	var user2;
-	user1=document.getElementById("u1").value;
-	user2=document.getElementById("u2").value;
-	console.log(user1);
-	console.log(user2);
-	
-	if (user1=="rock" && user2=="scissors"){
-		   document.getElementById("placeholder").innerHTML="Rock wins!";
-     }
-	 else if (user1=="scissors" && user2=="rock"){
-		   document.getElementById("placeholder").innerHTML="Rock wins!";	   		   
-     }
-	 else if (user1=="scissors"&& user2=="paper"){
-		   document.getElementById("placeholder").innerHTML="Scissors wins!";
-	 }
-	else if (user1=="paper"&& user2=="scissors"){
-		   document.getElementById("placeholder").innerHTML="Scissors wins!";
-	}
-	else if (user1=="paper" && user2=="rock"){
-		   document.getElementById("placeholder").innerHTML="Paper wins!";
-	}
-	else if (user1=="rock" && user2=="paper"){
-		   document.getElementById("placeholder").innerHTML="Paper wins!";
-	}
+      //while (count>1){
+	 for( i = 99; i >0;i=i-1){
+
+	    (count+" " +word+" of beer on the wall"+);
+		document.getElementById("placeholder").innerHTML="99 bottles of beer on the wall,";
+		(count+" " +word+ " of beer,");
+		document.getElementById("placeholder").innerHTML="99 bottles of beer";
+		("Take one down, pass it around,");
+		document.getElementById("placeholder").innerHTML="Take one down, pass it around,";
+		 count=count-1;
+	 
+			if (count>1){
+			 (count+" " +word+" of beer on the wall");
+			 document.getElementById("placeholder").innerHTML="98 bottles of beer on the wall,"
+			}
 		 
-	 else{
-		 document.getElementById("placeholder").innerHTML="Invalid input,please try again";
-	}
- }
-
-
+		 else if (count==1){
+			 (count+" " +word+" of beer on the wall");
+			 (count+" " +word+" of beer on the wall");
+			 (count+" " +word+ " of beer,");
+			("Take one down, pass it around,");
+		 }
+	       
+		 
+	    else (count==0){
+		 ("No more+" +word+" of beer on the wall");
+	      document.getElementById("placeholder").innerHTML="No more bottles of beer on the wall,"
+ 
+        }
+	 }
