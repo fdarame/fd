@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<!-- Styling part of the website, ony this page-->
+	<style>
+body{
+    min-height:600px;
+	background-color:#008c81;
+	font-size:150%;
+ }
+ .footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+ }
+ #header1{
+	flex:2;	
+	text-align:center;	
+}
+ .link,.foot{
+	flex:3;
+	text-align:center;	
+}
+#header2{
+	display:flex;
+	flex:10;	
+	align-items:center;
+	padding: 15px;
+	background-color: #33b5e5;
+    color: #ffffff;
+}
+ a{
+	color:white;
+	
+}
+ </style>  <!-- End of Styling part of the website, on this page-->
+	</head>
+	<body>
+	
+	<img src="logo.png" style="float:right" alt="picture" width="180" height="195"/>
+	<!-- logo  of the website-->
+	
+		<div id="header">
+			<div id="header2">
+			<!-- different menus of the website-->
+			
+			<div class="link"><a href="gallery.html">Gallery </a></div>
+			<div class="link"><a href="contact.html">Contact us </a></div>
+			<div class="link"><a href="index.html">Home </a></div>
+			</div>
+			<!-- Describing of the website-->
+		<h2>Mind your mind</h2>
+		<h3>This platform is about you!</h3>
+		<p> We all have been impacted by the current world we live in (Covid-19 situation).
+         <p>Many people have lost close ones, jobs, friends, family...</p>
+         <p>It's ok to feel down sometimes, but the most important is staying positive and doing your best every day.</p>
+          <p> We have a team ready to help you (employees and volunteers) who want to help their community.</p>
+		  <p> We offer one to one session, by phone or through Skype.</p>
+		  <p>Do not hesitate to contact us; we will assign you to one of our team members !</p>
+		  <p> Where we are based?</p><p id="main"></p>
+		 <script>
+		 <!--Java Script file begining-->
+		 
+		 <!-- using Arrays-->
+     const countries = ["Ireland", "Uk", "Netherlands","France"];
+    document.getElementById("main").innerHTML = countries;
+	
+     </script>
+	<!-- End of Java Script for this page-->
+		   
+		  </div>
+		 <!-- Copywright for the website-->
+		<div class="footer">
+       <footer>&copy; Copyright 2021 Mind Your Mind</footer>
+     </div>
+	</body>
+     </html>
