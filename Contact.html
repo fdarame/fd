@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+	<style><!-- Styling part of the website, ony this page-->
+	
+#header1{
+	flex:2;	
+	text-align:center;	
+}
+.link,.foot{
+	flex:3;
+	text-align:center;	
+}
+#header2{
+	display:flex;
+	flex:10;	
+	align-items:center;
+}
+body{  
+    min-height:600px;
+	background-color:#008c81;
+	font-size:150%;
+ }
+ .footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+ }
+.link,.foot{
+	flex:3;
+	text-align:center;	
+}
+#header2{
+	display:flex;
+	flex:10;	
+	align-items:center;
+	padding: 15px;
+	background-color: #33b5e5;
+    color: #ffffff;
+}
+a{
+	color:white;
+}
+input,textarea{
+	font-size:40pt;
+	width:40%;
+	height:50px;
+}
+
+	</style><!-- End of Styling part of the website, on this page-->
+	<script>
+	<!-- Java Script for this page-->
+	<!-- Alert messagae for this page-->
+	function message(){
+  alert("Thank you for contacting us, we will contact you shortly!");
+  }
+ 	</script> <!--  End of Java Script for this page-->
+	
+	</head>
+	<body>
+	<!-- logo  of the website-->
+	<img src="logo.png" style="float:right" alt="picture" width="180" height="195"/>
+		<div id="header">
+			<div id="header2">
+			<!-- Menus of the webpage to navigate-->
+			<div class="link"><a href="about us.html">About us</a></div>
+			<div class="link"><a href="gallery.html">Gallery </a></div>
+			<div class="link"><a href="index.html">Home </a></div>
+			</div>
+		</div>
+		<div id="main">
+			<div id="content">
+			<!-- Create a  contact form to fill -->
+				<h1>Find out More</h1>
+			</div>
+		
+				
+				<form>
+					<label>Your Name:</label>
+					<br />
+					<input type="text"/>
+					<br />
+					
+					<label>Your Email:</label>
+					<br />
+					<input type="email"/>					
+					<br />
+					
+					<label>Your Phone Number:</label>
+					<br />
+					<input type="number"/>					
+					<br />
+					
+					<label>Your Message:</label>
+					<br />
+					<textarea></textarea>
+					<!-- End of form -->
+				</form>
+			</div>
+			<!--submit button here, an alert when the details are send in the Java Script file-->
+			<button onclick="message()">Submit
+		  </button>
+		<!-- Copywright for the website-->
+		<div class="footer">
+    <footer>&copy; Copyright 2021 Mind Your Mind</footer>
+     </div>
+	</body>
+   </html>
